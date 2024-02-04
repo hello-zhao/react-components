@@ -1,5 +1,5 @@
-import React, { ReactNode } from 'react';
 import { ThemeProvider } from '@ucloud-fe/react-components';
+import React, { ReactNode } from 'react';
 
 const snake = (str: string) => {
     return str.replace(/^[A-Z]/, s => s.toLowerCase()).replaceAll(/[A-Z]/g, s => '_' + s.toLowerCase());
@@ -31,7 +31,18 @@ const editorComponentDemos = [
     '角标 Badge',
     '标签 Tag',
     '进度条 Progress',
-    '提示 Notice'
+    '提示 Notice',
+    '折叠面板 Collapse',
+    '间距 Combine',
+    '抽屉 Drawer',
+    '自增表单 EditableList',
+    '表单 Form',
+    '图标 Icon',
+    '布局 Layout',
+    '加载中 Loading',
+    '链接 Link',
+    '下拉菜单 Menu',
+    '基础导航 Nav'
 ].map(desc => {
     const [, component] = desc.split(/\s+/);
     const Demo = require(`./componentDemos/${component}`).default;
