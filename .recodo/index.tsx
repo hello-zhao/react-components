@@ -77,7 +77,8 @@ const renderDesignTokenEditor = (dom: string) => {
                 (init: any, v: string) => {
                     const themeName = `theme-${v.replace('.json', '')}`;
                     init.modules[themeName] = {
-                        file: `http://127.0.0.1:8082/${v}`,
+                        // file: `http://127.0.0.1:8082/${v}`,
+                        file: `https://raw.githubusercontent.com/hello-zhao/react-components/feature/components-theme-demo/.recodo/define/${v}`,
                         type: 'json'
                     };
                     init.themeListName.push(themeName);
