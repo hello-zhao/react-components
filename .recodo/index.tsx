@@ -15,11 +15,16 @@ mod.export('@ucloud-fe/mod', mod);
 mod.config({
     modules: {
         '@ucloud-fe/react-components/style': {
-            css: 'https://cdn.jsdelivr.net/npm/@ucloud-fe/react-components@latest/dist/icon.min.css',
+            // css: 'http://127.0.0.1:8083/icon.min.css',
+            css:
+                'https://cdn.jsdelivr.net/gh/hello-zhao/react-components@feature/components-theme-demo/dist1/icon.min.css',
             type: 'immediate'
         },
         '@ucloud-fe/react-components': {
-            js: 'https://cdn.jsdelivr.net/npm/@ucloud-fe/react-components@latest/dist/main.min.js',
+            // js: 'http://127.0.0.1:8083/main.min.js',
+            js:
+                'https://cdn.jsdelivr.net/gh/hello-zhao/react-components@feature/components-theme-demo/dist1/main.min.js',
+
             type: 'amd',
             dep: ['moment', 'react', 'react-dom', '@ucloud-fe/react-components/style']
         },

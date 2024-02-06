@@ -1,8 +1,8 @@
-import styled from '@emotion/styled';
 import { css } from '@emotion/core';
+import styled from '@emotion/styled';
 
-import { DesignToken, sWrap } from 'src/style';
 import config from 'src/config';
+import { DesignToken, sWrap } from 'src/style';
 
 const { prefixCls: _prefixCls } = config;
 export const prefixCls = _prefixCls + '-notice';
@@ -106,6 +106,7 @@ export const NoticeWrap = sWrap<{ styleType: string }>()(
             }
             .${contentCls} {
                 flex: 1;
+                text-align: ${DT.T_NOTICE_CONTENT_ALIGN};
             }
             .${actionCls} {
                 padding-left: 8px;
