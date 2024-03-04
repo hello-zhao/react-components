@@ -1,13 +1,12 @@
 import React from 'react';
 
-import Switch from 'src/components/Switch';
-import Form from 'src/components/Form';
-import Menu from 'src/components/Menu';
-import TransferMenu from 'src/components/TransferMenu';
-import Transfer from 'src/components/Transfer';
-import Combine from 'src/components/Combine';
 import Button from 'src/components/Button';
+import Combine from 'src/components/Combine';
+import Form from 'src/components/Form';
 import Radio from 'src/components/Radio';
+import Switch from 'src/components/Switch';
+import Transfer from 'src/components/Transfer';
+import TransferMenu from 'src/components/TransferMenu';
 
 // demo start
 const { defaultProps } = Transfer;

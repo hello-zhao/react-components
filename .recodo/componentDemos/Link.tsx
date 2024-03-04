@@ -1,7 +1,7 @@
 // @ts-nocheck
 import React from 'react';
 
-import { Form, Link, Radio } from '@ucloud-fe/react-components';
+import { Form, Input, Link, Radio } from '@ucloud-fe/react-components';
 const Sizes = ['sm', 'md', 'lg'];
 const StyleType = ['primary', 'border', 'border-gray'];
 const Shape = ['null', 'circle', 'square'];
@@ -12,11 +12,12 @@ class Demo extends React.Component {
         this.state = {
             size: Sizes[0],
             styleType: StyleType[0],
-            shape: Shape[0]
+            shape: Shape[0],
+            icon: 'plus'
         };
     }
     render() {
-        const { size, styleType, shape } = this.state;
+        const { size, styleType, shape, icon } = this.state;
         const itemLayout = {
             labelCol: {
                 span: 3
@@ -56,6 +57,13 @@ class Demo extends React.Component {
                                 value={shape}
                             ></Radio.Group>
                         </Form.Item>
+                        <Form.Item label="icon" {...itemLayout}>
+                            <Input
+                                value={icon}
+                                onChange={e => this.setState({ icon: e.target.value })}
+                                placeholder="icon"
+                            />
+                        </Form.Item>
                     </Form.Group>
                 </Form>
                 <div className="demo-wrap">
@@ -65,6 +73,7 @@ class Demo extends React.Component {
                         shape={shape === 'null' ? undefined : shape}
                         href="https://google.com"
                         target="_blank"
+                        icon={icon}
                     >
                         Link
                     </Link.Button>
