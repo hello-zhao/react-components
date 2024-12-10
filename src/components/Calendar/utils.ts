@@ -6,6 +6,10 @@ export interface Rules {
     range?: [TDate, TDate];
     /** @deprecated */
     custom?: (date: Moment, value?: Moment | null) => boolean;
+    /**
+     * 自定义禁用规则提示语
+     */
+    message?: string;
 }
 
 export const getDisabledRule = (

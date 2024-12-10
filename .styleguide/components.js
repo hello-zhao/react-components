@@ -89,6 +89,10 @@ module.exports = [
                 components: ['DatePicker', 'Month', 'Range']
             },
             {
+                name: 'SDatePicker',
+                components: ['DatePickerV2', 'MonthV2', 'RangeV2']
+            },
+            {
                 name: 'TimePicker'
             },
             {
