@@ -93,6 +93,10 @@ module.exports = [
                 components: ['DatePickerV2', 'MonthV2', 'RangeV2']
             },
             {
+                name: 'TDatePicker',
+                components: ['DatePicker', 'Month', 'Range']
+            },
+            {
                 name: 'TimePicker'
             },
             {

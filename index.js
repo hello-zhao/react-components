@@ -11,4 +11,6 @@ function importAll(r) {
 
 importAll(require.context('./src/components/', true, /^\.\/[A-Za-z]+\/index\.(j|t)sx$/));
 
+console.log('components', components);
+
 module.exports = components;
